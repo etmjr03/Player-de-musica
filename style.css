@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -10,10 +12,6 @@ body {
 
 body * {
     font-size: 'Roboto', sans-serif;
-}
-
-#app * {
-    border: 1px solid #FFF;
 }
 
 #app {
@@ -44,6 +42,11 @@ body * {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+#player-1 .info {
+    margin-top: 28px;
 }
 
 #player-2 {
@@ -54,6 +57,7 @@ body * {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 #player-3 {
@@ -64,9 +68,35 @@ body * {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .player {
     background-color: #2A2141;
     padding: 28px;
+    border-radius: 10px;
+}
+
+.info {
+    color: #FFF;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+
+.info h1 {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.info p {
+    opacity: 0.67;
+    font-size: 19px;
+}
+
+.contoles {
+    display: flex;
+    color: #FFF;
+    justify-content: space-between;
+    margin-top: 28px;
 }
